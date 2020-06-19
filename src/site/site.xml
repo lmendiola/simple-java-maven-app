@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+ <project name="Libreria Grafica en Java">
+ 
+    <bannerLeft>
+       <name>CICE</name>
+       <src>logo_cice.gif</src>
+       <href>www.juntadeandalucia.es/innovacioncienciayempresa/</href>
+    </bannerLeft>
+ 
+    <body>
+       <links>
+          <item name="Libreria Grafica en Java"
+             href="http://proyectos.cice.com/graficos/index.html" />
+          <item name="Foro" href="http://foro.cice.com/" />
+          <item name="Blog" href="http://blog.cice.com/" />
+       </links>
+ 
+       <menu name="Librería Gráfica">
+          <item name="Introducción" href="/servicios/madeja/documentos.html" />
+       </menu>
+ 
+    </body>
+ </project>
