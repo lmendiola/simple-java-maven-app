@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Build simple-java-maven-app'
-        sh 'sh mvn -B -DskipTests clean package'
+        sh 'mvn -B -DskipTests clean package'
       }
     }
 
@@ -13,7 +13,7 @@ pipeline {
         stage('Linux Tests') {
           steps {
             echo 'Ejecución tests'
-            sh 'sh mvn test'
+            sh 'mvn test'
             junit(allowEmptyResults: true, testResults: 'target/surefire-reports/*.xml')
           }
         }
@@ -37,7 +37,6 @@ pipeline {
     stage('Deploy Production') {
       steps {
         echo 'Despliegue en PRO'
-        sh 'sh ./jenkins/scripts/deliver.sh'
       }
     }
 
