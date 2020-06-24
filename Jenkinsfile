@@ -47,7 +47,7 @@ pipeline {
   }
   post {
     always {
-      archiveArtifacts(artifacts: 'target/simple-java-maven-app.jar', fingerprint: true)
+      archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true)
     }
 
     failure {
