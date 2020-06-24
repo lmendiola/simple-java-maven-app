@@ -43,7 +43,7 @@ pipeline {
 
   }
   tools {
-    maven 'Maven2'
+    maven 'Maven3'
     jdk 'jdk8'
   }
   post {
