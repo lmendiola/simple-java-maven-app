@@ -12,7 +12,7 @@ pipeline {
       parallel {
         stage('Linux Tests') {
           steps {
-            echo 'Ejecución tests'
+            echo 'EjecuciÃ³n tests'
             sh 'sh mvn test'
             junit(allowEmptyResults: true, testResults: 'target/surefire-reports/*.xml')
           }
@@ -30,7 +30,7 @@ pipeline {
     stage('Deploy Staging') {
       steps {
         echo 'Despliegue en PRE'
-        input '¿Desea desplegr en PRO?'
+        input 'Â¿Desea desplegr en PRO?'
       }
     }
 
