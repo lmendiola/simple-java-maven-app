@@ -51,6 +51,7 @@ pipeline {
     }
 
     failure {
+      echo 'Envia email con el error'
       mail(to: 'slau.fdi@gmail.com', subject: "Failed Pipeline ${currentBuild.fullDisplayName}", body: " For details about the failure, see ${env.BUILD_URL}")
     }
 
